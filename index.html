@@ -31,6 +31,9 @@
 
 	<link rel="stylesheet" href="demos/app-landing/css/colors.css" type="text/css" />
 
+	<!-- para swipe en slider -->
+	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+
 
 	<!-- Document Title
 	============================================= -->
@@ -67,18 +70,7 @@
 
 						<ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="160">
 							<li><a href="index.html"><div>Inicio</div></a></li>
-							<li><a href="#"><div>Servicios</div></a>
-								<ul>
-									<li><a href="#" data-href="#section-nextgen"><div>Gestión Retomas</div></a></li>
-									<li><a href="#" data-href="#section-nextgen"><div>Gestión Traspasos/Subastas</div></a></li>
-									<li><a href="#" data-href="#section-stunning-graphics"><div>Informes Benchmark</div></a></li>
-									<li><a href="#" data-href="#section-secured-solutions"><div>Analytics</div></a></li>
-									<li><a href="#" data-href="#section-secured-solutions"><div>Información Vehículos</div></a></li>
-									<li><a href="#" data-href="#section-secured-solutions"><div>Precios de Mercado</div></a></li>
-									<li><a href="#" data-href="#section-secured-solutions"><div>Pertaje Digital</div></a></li>
-									<li><a href="#" data-href="#section-secured-solutions"><div>Oportunidades</div></a></li>
-								</ul>
-							</li>
+							<li><a href="#" data-href="#section-function"><div>Servicios</div></a></li>
 							<li><a href="#"><div>Industrias</div></a>
 								<ul>
 									<li><a href="#" data-href="#section-nextgen"><div>Automotoras & Mayoristas</div></a></li>
@@ -102,38 +94,75 @@
 
 		</header><!-- #header end -->
 
-		<section id="slider" class="slider-element full-screen slider-parallax">
-			<div class="slider-parallax-inner" style="background: url('demos/app-landing/images/hero/hero.jpg') center center no-repeat; background-size: cover;">
-				<div class="vertical-middle" style="z-index: 2;">
-					<div class="container dark clearfix">
-						<div class="row clearfix">
-							<div class="col-lg-6 col-md-6">
-								<div class="emphasis-title">
-									<h1 class="font-body">Velocidad y Transparencia.</h1>
-									<h3>Únete al mayor ecosistema de la industria automotriz y descubre sus beneficios.</h3>
+
+
+		<section id="slider" class="slider-element slider-parallax swiper_wrapper full-screen clearfix">
+			<div class="slider-parallax-inner">
+
+				<div class="swiper-container swiper-parent">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide dark" style="background-image: url('demos/app-landing/images/hero/hero.jpg');">
+							<div class="vertical-middle" style="z-index: 2;">
+								<div class="container dark clearfix">
+									<div class="row clearfix">
+										<div class="col-lg-6 col-md-6">
+											<div class="emphasis-title">
+												<h1 class="font-body">Velocidad y Transparencia.</h1>
+												<h3>Únete al mayor ecosistema de la industria automotriz y descubre sus beneficios.</h3>
+											</div>
+											<p>
+											<a href="#" data-scrollto="#section-pricing" data-easing="easeInOutExpo" data-speed="1250" data-offset="160" class="button button-large button-white button-light capitalize" style="border-radius: 23px;">Contacto</a>
+											<a href="https://www.youtube.com/watch?v=N_r349riLEE" class="hero-action-link" data-lightbox="iframe"><i class="icon-play-sign"></i> Ver Video</a>			
+										</div>
+									</div>
 								</div>
-								<p>
-								<a href="#" data-scrollto="#section-pricing" data-easing="easeInOutExpo" data-speed="1250" data-offset="160" class="button button-large button-white button-light capitalize" style="border-radius: 23px;">Contacto</a>
-								<a href="https://www.youtube.com/watch?v=N_r349riLEE" class="hero-action-link" data-lightbox="iframe"><i class="icon-play-sign"></i> Ver Video</a>			
 							</div>
-							<!--<div class="col-lg-7 col-md-7 noleftmargin fright">
-								<img src="demos/app-landing/images/section/3devicesAR.png" alt="Información precisa" data-animate="fadeInRight">
-							</div>-->
 						</div>
+						<div class="swiper-slide dark">
+							<div class="vertical-middle" style="z-index: 2;">
+								<div class="container dark clearfix">
+									<div class="row clearfix">
+										<div class="col-lg-6 col-md-6">
+											<div class="emphasis-title">
+												<h1 class="font-body">Velocidad y Transparencia.</h1>
+												<h3>Únete al mayor ecosistema de la industria automotriz y descubre sus beneficios.</h3>
+											</div>
+											<p>
+											<a href="#" data-scrollto="#section-pricing" data-easing="easeInOutExpo" data-speed="1250" data-offset="160" class="button button-large button-white button-light capitalize" style="border-radius: 23px;">Contacto</a>
+											<a href="https://www.youtube.com/watch?v=N_r349riLEE" class="hero-action-link" data-lightbox="iframe"><i class="icon-play-sign"></i> Ver Video</a>			
+										</div>
+									</div>
 
+								</div>
+
+							</div>
+							<div class="video-wrap">
+								<video id="slide-video" poster="images/videos/explore.jpg" preload="auto" loop autoplay muted>
+									<source src='images/videos/explore2.webm' type='video/webm' />
+									<source src='images/videos/explore2.mp4' type='video/mp4' />
+								</video>
+								<div class="video-overlay" style="background-color: rgba(0,0,0,0.55);"></div>
+							</div>
+						</div>
+						<div class="swiper-slide" style="background-image: url('images/slider/swiper/3.jpg'); background-position: center top;">
+							<div class="container clearfix">
+								<div class="slider-caption">
+									<h2 data-animate="fadeInUp">Great Performance</h2>
+									<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">You'll be surprised to see the Final Results of your Creation &amp; would crave for more.</p>
+								</div>
+							</div>
+						</div>
 					</div>
+					<div class="slider-arrow-left"><i class="icon-angle-left"></i></div>
+					<div class="slider-arrow-right"><i class="icon-angle-right"></i></div>
+				</div>
 
-				</div>
-				<!--
-				<div class="col-lg-8 col-md-8 noleftmargin fright" style="vertical-align: middle;">
-					<img src="demos/app-landing/images/section/3devicesAR.png" alt="Información precisa" data-animate="fadeInRight">
-				</div>-->
-				<div class="video-wrap" style="position: absolute; height: 100%; z-index: 1;">
-					<div class="video-overlay" style="background: rgba(0,0,0,0.2);"></div>
-				</div>
+				<a href="#" data-scrollto="#content" data-offset="100" class="dark one-page-arrow"><i class="icon-angle-down infinite animated fadeInDown"></i></a>
+
 			</div>
-
 		</section>
+
+
 
 		<!-- Content
 		============================================= -->
@@ -166,7 +195,7 @@
 					</div>
 				</div>
 
-					<div class="heading-block center divcenter nobottomborder bottommargin clearfix" style="max-width: 700px">
+					<div id="section-function"class="heading-block center divcenter nobottomborder bottommargin clearfix" style="max-width: 700px">
 						<h2>Funcionalidades pensadas en tu negocio.</h2>
 						<span class="divcenter">Escuchamos actívamente a nuestros clientes para desarrollar las herramientas que el mundo automotriz requiere.</span>
 					</div>
@@ -616,148 +645,16 @@
 
 					</div>
 
-					<div class="line"></div><div class="clear"></div>
-
-					<div class="clear"></div>
-
-					<div id="section-faqs" class="page-section nopadding nomargin">
-
-						<h2 class="center font-body bottommargin-lg">Frequently Asked Questions</h2>
-
-						<div class="row topmargin-sm clearfix">
-
-							<div class="col-lg-5 offset-lg-1 col-md-6 bottommargin-sm">
-								<h4 class="font-body" style="margin-bottom:15px;">How do I become an author?</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi.</p>
-							</div>
-							<div class="col-lg-5 col-md-6 bottommargin-sm">
-								<h4 class="font-body" style="margin-bottom:15px;">Helpful Resources for Authors</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, placeat, architecto rem dolorem dignissimos repellat veritatis in et eos doloribus magnam aliquam ipsa alias assumenda officiis quasi sapiente suscipit.</p>
-							</div>
-							<div class="col-lg-5 offset-lg-1 col-md-6 bottommargin-sm">
-								<h4 class="font-body" style="margin-bottom:15px;">How much money can I make?</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, fugiat iste nisi tempore nesciunt nemo fuga? Nesciunt, delectus laboriosam nisi repudiandae nam fuga saepe animi recusandae.</p>
-							</div>
-							<div class="col-lg-5 col-md-6 bottommargin-sm">
-								<h4 class="font-body" style="margin-bottom:15px;">Can I offer my items for free on a promotional basis?</h4>
-								<p>Laboriosam iusto quia nulla ad voluptatibus iste beatae voluptas corrupti facilis accusamus recusandae sequi debitis reprehenderit quibusdam. Facilis eligendi a exercitationem nisi et placeat excepturi velit!</p>
-							</div>
-							<div class="col-lg-5 offset-lg-1 col-md-6 bottommargin-sm">
-								<h4 class="font-body" style="margin-bottom:15px;">An Introduction to the Marketplaces for Authors</h4>
-								<p>Quisquam atque vero delectus corrupti! Quo, maiores, dolorem, hic commodi nulla ratione accusamus doloribus fuga magnam id temporibus dignissimos deleniti quidem ipsam corporis sapiente nam expedita saepe quas ab? Vero, assumenda.</p>
-							</div>
-							<div class="col-lg-5 col-md-6">
-								<h4 class="font-body" style="margin-bottom:15px;">How does the Tuts+ Premium affiliate program work?</h4>
-								<p class="nobottommargin">Reprehenderit similique nemo voluptate ullam natus illum magnam alias nobis doloremque delectus ipsa dicta repellat maxime dignissimos eveniet quae debitis ratione assumenda tempore officiis fugiat dolor.</p>
-							</div>
-
-						</div>
-
-					</div>
-
-				</div>
-
-				<div class="section bottommargin-lg" style="background-color: #F8FAFB; border-top: 1px solid #E5E5E5; border-bottom: 1px solid #E5E5E5;">
-
-					<div class="fslider testimonial testimonial-full nobg noborder noshadow" data-animation="fade" style="max-width: none;">
-						<div class="flexslider">
-							<div class="slider-wrap divcenter" style="max-width: 650px;">
-								<div class="slide">
-									<div class="testi-image">
-										<a href="#"><img src="images/testimonials/3.jpg" alt="Customer Testimonails"></a>
-									</div>
-									<div class="testi-content">
-										<p>Similique fugit repellendus expedita excepturi iure provident quia eaque. Repellendus, vero numquam?</p>
-										<div class="testi-meta">
-											Steve Jobs
-											<span>Apple Inc.</span>
-										</div>
-									</div>
-								</div>
-								<div class="slide">
-									<div class="testi-image">
-										<a href="#"><img src="images/testimonials/2.jpg" alt="Customer Testimonails"></a>
-									</div>
-									<div class="testi-content">
-										<p>Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati id culpa corporis molestias.</p>
-										<div class="testi-meta">
-											Collis Ta'eed
-											<span>Envato Inc.</span>
-										</div>
-									</div>
-								</div>
-								<div class="slide">
-									<div class="testi-image">
-										<a href="#"><img src="images/testimonials/1.jpg" alt="Customer Testimonails"></a>
-									</div>
-									<div class="testi-content">
-										<p>Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum libero illo rerum!</p>
-										<div class="testi-meta">
-											John Doe
-											<span>XYZ Inc.</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
 				</div>
 
 				<div class="clear"></div>
-
-				<div id="section-gallery" class="page-section nopadding nomargin">
-
-					<div class="container topmargin bottommargin-lg center clearfix">
-
-						<h3 class="ls1 t400" style="font-size: 32px; margin-bottom: 10px;">App Screenshots</h3>
-						<p class="lead divcenter" style="max-width: 600px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, repellendus quae fuga ad, beatae odit.</p>
-						<a href="#" class="button button-circle capitalize">Check All</a>
-
-					</div>
-
-					<div class="owl-carousel owl-carousel-full image-carousel carousel-widget bottommargin" data-margin="20" data-center="true" data-loop="true" data-nav="false" data-pagi="true" data-items-xs="2" data-items-sm="2" data-items-md="4" data-items-lg="4" data-items-xl="6" data-stage-padding="30" data-lightbox="gallery">
-
-						<div class="oc-item">
-							<a data-lightbox="gallery-item" href="demos/app-landing/images/gallery/img-1.jpg"><img src="demos/app-landing/images/gallery/img-1.jpg" alt="Image 1"></a>
-						</div>
-						<div class="oc-item">
-							<a data-lightbox="gallery-item" href="demos/app-landing/images/gallery/img-2.jpg"><img src="demos/app-landing/images/gallery/img-2.jpg" alt="Image 2"></a>
-						</div>
-						<div class="oc-item">
-							<a data-lightbox="gallery-item" href="demos/app-landing/images/gallery/img-3.jpg"><img src="demos/app-landing/images/gallery/img-3.jpg" alt="Image 3"></a>
-						</div>
-						<div class="oc-item">
-							<a data-lightbox="gallery-item" href="demos/app-landing/images/gallery/img-4.jpg"><img src="demos/app-landing/images/gallery/img-4.jpg" alt="Image 4"></a>
-						</div>
-						<div class="oc-item">
-							<a data-lightbox="gallery-item" href="demos/app-landing/images/gallery/img-5.jpg"><img src="demos/app-landing/images/gallery/img-5.jpg" alt="Image 5"></a>
-						</div>
-						<div class="oc-item">
-							<a data-lightbox="gallery-item" href="demos/app-landing/images/gallery/img-6.jpg"><img src="demos/app-landing/images/gallery/img-6.jpg" alt="Image 5"></a>
-						</div>
-						<div class="oc-item">
-							<a data-lightbox="gallery-item" href="demos/app-landing/images/gallery/img-7.jpg"><img src="demos/app-landing/images/gallery/img-7.jpg" alt="Image 5"></a>
-						</div>
-
-					</div>
-
-				</div>
-
-				<div class="clear"></div>
-
-				<!-- <div class="section nomargin">
-					<div class="container clearfix">
-
-						<h2></h2>
-
-					</div>
-				</div> -->
 
 
 			</div>
 
 		</section><!-- #content end -->
+
+
 
 		<!-- Footer
 		============================================= -->
