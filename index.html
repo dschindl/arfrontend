@@ -78,7 +78,8 @@
 						<ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="160">
 							<li><a href="#" data-href="#oc-clients"><div>Clientes</div></a></li>
 							<li><a href="#" data-href="#section-gallery"><div>Nosotros</div></a></li>
-							<li class="menu-item-emphasis"><a href="#modal-login" data-lightbox="inline"><div><i class="icon-user2"></i>Ingresar</div></a></li>
+							<li class="menu-item-emphasis"><a href="#bs-example-modal-lg" data-toggle="modal" data-target=".bs-example-modal-lg">
+								<div><i class="icon-user2"></i>Ingresar</div></a></li>
 						</ul>
 
 					</nav><!-- #primary-menu end -->
@@ -161,7 +162,15 @@
 								</div>
 								<p>
 								<a href="#" data-scrollto="#section-pricing" data-easing="easeInOutExpo" data-speed="1250" data-offset="160" class="button button-large button-white button-light capitalize" style="border-radius: 23px;">Contacto</a>
-								<a href="#modal-login" class="button button-large button-circle button-blue" data-lightbox="inline"><i class="icon-user2"></i> Ingresar </a>	
+								<!-- Ex boton Login
+								<a href="#modal-login" class="button button-large button-circle button-blue" data-lightbox="inline"><i class="icon-user2"></i> Ingresar </a>
+								-->
+								<!-- Large modal -->
+								<button class="button button-large button-circle button-blue" data-toggle="modal" data-target=".bs-example-modal-lg"><i class="icon-user2"></i> Ingresar</button>
+
+						
+
+
 							</div>
 							<!--<div class="col-lg-7 col-md-7 noleftmargin fright">
 								<img src="demos/app-landing/images/section/3devicesAR.png" alt="Información precisa" data-animate="fadeInRight">
@@ -179,7 +188,36 @@
 					<div class="video-overlay" style="background: rgba(0,0,0,0.2);"></div>
 				</div>
 			</div>
+			<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-md">
+					<div class="modal-body">
+						<div class="modal-content" style="background-color: #FFF; max-width: 500px;">
+							<button type="button" class="close tright allmargin-sm" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<div class="block divcenter" style="background-color: #FFF; max-width: 400px;">
+								<div style="padding: 50px;">
+									<h3 class="font-body">Ingresa a tu cuenta</h3>
+									<form action="#" method="post" class="nobottommargin">
+										<div class="col_full">
+											<label class="font-body capitalize" for="login-form-modal-username">Nombre Usuario:</label>
+											<input type="text" id="login-form-modal-username" name="login-form-modal-username" value="" class="form-control" />
+										</div>
 
+										<div class="col_full">
+											<label class="font-body capitalize" for="login-form-modal-password">Clave:</label>
+											<input type="password" id="login-form-modal-password" name="login-form-modal-password" value="" class="form-control" />
+										</div>
+
+										<div class="col_full nobottommargin">
+											<button class="button button-rounded nomargin" id="login-form-modal-submit" name="login-form-modal-submit" value="login">Ingresar</button>
+											<a href="#" class="fright">Olvidé mi clave</a>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<!-- Content
@@ -188,8 +226,8 @@
 
 			<div class="content-wrap nobottommargin nobottomborder nobottompadding">
 
-				<!-- Modal -->
-				<div class="modal1 mfp-hide" id="modal-login">
+				<!-- EX Modal  de login
+				<div class="modal1 mfp-hide " id="modal-login">
 					<div class="block divcenter" style="background-color: #FFF; max-width: 400px;">
 						<div style="padding: 50px;">
 							<h3 class="font-body">Ingresa a tu cuenta</h3>
@@ -212,6 +250,7 @@
 						</div>
 					</div>
 				</div>
+				 -->
 
 					<div id="section-function" class="heading-block center divcenter nobottomborder bottommargin clearfix" style="max-width: 700px">
 						<h2>Funcionalidades pensadas en tu negocio</h2>
@@ -789,47 +828,19 @@
 						</div>
 
 						<div class="col-lg-7">
-							<div class="row clearfix">
+							<div id="q-contact" class="widget quick-contact-widget clearfix">
 
-								<div class="col-lg-4 bottommargin-sm">
-									<div class="widget widget_links app_landing_widget_link clearfix">
-										<h4>In News</h4>
+								<h3 class="highlight-me">Contáctanos</h3>
+								<div class="quick-contact-form-result"></div>
+								<form id="quick-contact-form" name="quick-contact-form" action="include/quickcontact.php" method="post" class="quick-contact-form nobottommargin">
+									<div class="form-process"></div>
 
-										<ul>
-											<li><a href="http://codex.wordpress.org/">Documentation</a></li>
-											<li><a href="http://wordpress.org/support/forum/requests-and-feedback">Feedback</a></li>
-											<li><a href="http://wordpress.org/extend/plugins/">Plugins</a></li>
-											<li><a href="http://wordpress.org/support/">Support Forums</a></li>
-											<li><a href="http://wordpress.org/extend/themes/">Themes</a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-lg-4 bottommargin-sm">
-									<div class="widget widget_links app_landing_widget_link clearfix">
-										<h4>About Us</h4>
-
-										<ul>
-											<li><a href="http://codex.wordpress.org/">Documentation</a></li>
-											<li><a href="http://wordpress.org/support/forum/requests-and-feedback">Feedback</a></li>
-											<li><a href="http://wordpress.org/extend/plugins/">Plugins</a></li>
-											<li><a href="http://wordpress.org/support/">Support Forums</a></li>
-											<li><a href="http://wordpress.org/extend/themes/">Themes</a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-lg-4 bottommargin-sm">
-									<div class="widget widget_links app_landing_widget_link clearfix">
-										<h4>Support</h4>
-
-										<ul>
-											<li><a href="http://codex.wordpress.org/">Documentation</a></li>
-											<li><a href="http://wordpress.org/support/forum/requests-and-feedback">Feedback</a></li>
-											<li><a href="http://wordpress.org/extend/plugins/">Plugins</a></li>
-											<li><a href="http://wordpress.org/support/">Support Forums</a></li>
-											<li><a href="http://wordpress.org/extend/themes/">Themes</a></li>
-										</ul>
-									</div>
-								</div>
+									<input type="text" class="required sm-form-control input-block-level" id="quick-contact-form-name" name="quick-contact-form-name" value="" placeholder="Nombre Completo" />
+									<input type="text" class="required sm-form-control email input-block-level" id="quick-contact-form-email" name="quick-contact-form-email" value="" placeholder="Email" />
+									<textarea class="required sm-form-control input-block-level short-textarea" id="quick-contact-form-message" name="quick-contact-form-message" rows="4" cols="30" placeholder="Mensaje"></textarea>
+									<input type="text" class="hidden" id="quick-contact-form-botcheck" name="quick-contact-form-botcheck" value="" />
+									<button type="submit" id="quick-contact-form-submit" name="quick-contact-form-submit" class="button button-small button-3d nomargin" value="submit">Enviar</button>
+								</form>
 
 							</div>
 						</div>
